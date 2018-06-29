@@ -19,4 +19,9 @@ class IndiceController extends Controller
     {
         return view("clinica.index");
     }
+
+    public function index2()
+    {
+        return view("seguridad.index");
+    }
 }

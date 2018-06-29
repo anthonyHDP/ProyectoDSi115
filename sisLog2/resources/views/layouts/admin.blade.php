@@ -95,7 +95,7 @@
                 <!--<li><a href="#"><i class="fa fa-circle-o"></i> Registro de Medico</a></li>-->
               </ul>
             </li>
-            
+            <!--
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-th"></i>
@@ -104,9 +104,9 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="{{url('clinica/medico')}}"><i class="fa fa-circle-o"></i>Gestión de Medico</a></li>
-                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Proveedores</a></li>-->
+                <li><a href="#"><i class="fa fa-circle-o"></i> Proveedores</a></li>
               </ul>
-            </li>
+            </li>-->
 
             <!--
             <li class="treeview">

@@ -96,7 +96,7 @@
                 <li><a href="{{url('seguridad/usuario/create')}}"><i class="fa fa-circle-o"></i> Agregar Usuario</a></li>-->
               </ul>
             </li>
-            <!--
+            
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-th"></i>
@@ -104,9 +104,9 @@
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i> Listado Doctores</a></li>
-                li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a></li>
-              </ul>-->
+                <li><a href="{{url('clinica/medico')}}"><i class="fa fa-circle-o"></i> Listado Doctores</a></li>
+                <!--<li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a></li>-->
+              </ul>
             <!--
             </li>
             <li class="treeview">

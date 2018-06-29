@@ -23,7 +23,7 @@
     <div class="row">
         <footer class="main-footer">
                     <div class="pull-right hidden-xs">
-                        <b><strong><a href="{{url('seguridad/usuario')}}">Menu Administrador</a>.</strong></b>
+                        <b><strong><a href="{{url('seguridad')}}">Menu Administrador</a>.</strong></b>
                     </div>
                     
         </footer>
