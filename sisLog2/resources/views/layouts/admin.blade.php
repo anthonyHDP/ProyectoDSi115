@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>SGP</title>
+    <title>Clinica Betel</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -25,11 +25,11 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="{{url('home')}}" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b></b>SGP</span>
+          <span class="logo-mini"><b>CM</b>B</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>SGP</b></span>
+          <span class="logo-lg"><b>Clinica Betel</b></span>
         </a>
 
         <!-- Header Navbar: style can be found in header.less -->
@@ -46,15 +46,16 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <span class="hidden-xs">Registrar Nuevo Usuario</span>
+                  <span class="hidden-xs">{{ Auth::user()->name }}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     
                     <p>
-                      crear nuevo usuario
+                      {{ Auth::user()->email }}
                       <small>Clinica Betel</small>
+                      <small>DSI115</small>
                     </p>
                   </li>
                   
@@ -62,7 +63,7 @@
                   <li class="user-footer">
                     
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Cerrar</a>
+                      <a href="{{url('/logout')}}" class="btn btn-default btn-flat">Cerrar</a>
                     </div>
                   </li>
                 </ul>
@@ -86,26 +87,28 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>Clinica</span>
+                <span>Paciente</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="almacen/articulo"><i class="fa fa-circle-o"></i> Expediente de Paciente</a></li>
-                <li><a href="almacen/categoria"><i class="fa fa-circle-o"></i> Registro de Medico</a></li>
+                <li><a href="{{url('clinica/paciente')}}"><i class="fa fa-circle-o"></i> Expediente de Paciente</a></li>
+                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Registro de Medico</a></li>-->
               </ul>
             </li>
             
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-th"></i>
-                <span>Datos</span>
+                <span>Doctores</span>
                  <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="compras/ingreso"><i class="fa fa-circle-o"></i> Ingresos</a></li>
-                <li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a></li>
+                <li><a href="{{url('clinica/medico')}}"><i class="fa fa-circle-o"></i>Gestión de Medico</a></li>
+                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Proveedores</a></li>-->
               </ul>
             </li>
+
+            <!--
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-shopping-cart"></i>
@@ -140,7 +143,7 @@
                 <small class="label pull-right bg-yellow">IT</small>
               </a>
             </li>
-                        
+               -->         
           </ul>
         </section>
         <!-- /.sidebar -->

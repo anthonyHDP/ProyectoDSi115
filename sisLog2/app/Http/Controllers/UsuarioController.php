@@ -40,6 +40,7 @@ class UsuarioController extends Controller
     	$usuario->name=$request->get('name');
     	$usuario->email=$request->get('email');
     	$usuario->password=bcrypt($request->get('password'));
+        $usuario->tipoUsuario=$request->get('idtipo');
     	$usuario->save();
     	return Redirect::to('seguridad/usuario');
     }
@@ -55,6 +56,7 @@ class UsuarioController extends Controller
     	$usuario->name=$request->get('name');
     	$usuario->email=$request->get('email');
     	$usuario->password=bcrypt($request->get('password'));
+        $usuario->tipoUsuario=$request->get('idtipo');
     	$usuario->update();
     	return Redirect::to('seguridad/usuario');
 

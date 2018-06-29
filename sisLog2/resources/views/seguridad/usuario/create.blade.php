@@ -65,6 +65,17 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                              <label for="idtipo" class="col-md-4 control-label">Tipo de Usuario</label>                              
+                             
+                               <select id="idtipo" name="idtipo" class="form-control">
+                                
+                                    <option value="1 ">Administrador</option>
+                                    <option value="2 ">Doctor</option>
+                                </select>                        
+                    
+                        </div>
+
             <div class="form-group">
             	<button class="btn btn-primary" type="submit">Guardar</button>
             	<button class="btn btn-danger" type="reset">Cancelar</button>

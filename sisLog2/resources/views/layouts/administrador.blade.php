@@ -25,7 +25,7 @@
       <header class="main-header">
 
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="{{url('home')}}" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>CM</b>B</span>
           <!-- logo for regular state and mobile devices -->
@@ -54,7 +54,8 @@
                   <li class="user-header">
                     
                     <p>
-                      Desarrollando Software
+                      {{ Auth::user()->email }}
+                      <small>Clinica Betel</small>
                       <small>DSI115</small>
                     </p>
                   </li>
@@ -91,11 +92,11 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="seguridad/usuarios"><i class="fa fa-circle-o"></i> Listado Usuarios</a></li>
-                <!--<li><a href="almacen/categoria"><i class="fa fa-circle-o"></i> Categorías</a></li>-->
+                <li><a href="{{url('seguridad/usuario')}}"><i class="fa fa-circle-o"></i> Listado Usuarios</a></li>
+                <li><a href="{{url('seguridad/usuario/create')}}"><i class="fa fa-circle-o"></i> Agregar Usuario</a></li>-->
               </ul>
             </li>
-            
+            <!--
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-th"></i>
@@ -104,8 +105,9 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="#"><i class="fa fa-circle-o"></i> Listado Doctores</a></li>
-                <!--<li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a></li>-->
-              </ul>
+                li><a href="compras/proveedor"><i class="fa fa-circle-o"></i> Proveedores</a></li>
+              </ul>-->
+            <!--
             </li>
             <li class="treeview">
               <a href="#">
@@ -115,7 +117,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="#"><i class="fa fa-circle-o"></i> submenu algo mas xd</a></li>
-                <!--<li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Clientes</a></li>-->
+                <li><a href="ventas/cliente"><i class="fa fa-circle-o"></i> Clientes</a></li>
               </ul>
             </li>
                        
@@ -129,7 +131,7 @@
                 
               </ul>
             </li>-->
-             <li>
+            <!-- <li>
               <a href="#">
                 <i class="fa fa-plus-square"></i> <span>Ayuda</span>
                 <small class="label pull-right bg-red">PDF</small>
@@ -141,7 +143,7 @@
                 <small class="label pull-right bg-yellow">IT</small>
               </a>
             </li>
-                        
+                -->        
           </ul>
         </section>
         <!-- /.sidebar -->
@@ -162,7 +164,7 @@
             <div class="col-md-12">
               <div class="box">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Sistema de Gestion</h3>
+                  <h3 class="box-title">Sistema de Gestion de Procedimientos de la Clinica Betel</h3>
                   <div class="box-tools pull-right">
                     <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
                     
